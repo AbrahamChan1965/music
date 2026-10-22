@@ -13,12 +13,14 @@ h2.sec{font-family:"Noto Serif CJK TC",serif;color:var(--gold);font-size:21px;le
 .index-row{display:flex;align-items:baseline;gap:18px;padding:20px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
 .index-row .no{font-family:"Noto Serif CJK TC",serif;color:var(--purple);font-size:15px;letter-spacing:.2em}
 .index-row .t{font-family:"Noto Serif CJK TC",serif;font-size:25px}
+.index-row .t small{display:block;font-size:13px;color:var(--dim);letter-spacing:.15em;font-family:"Noto Sans CJK TC",sans-serif}
 .index-row .m{margin-left:auto;color:var(--dim);font-size:14px;text-align:right;white-space:nowrap}
 .index-row:hover .t{color:var(--gold)}
 .note{color:var(--dim);font-size:15px}
 .kicker{text-align:center;color:var(--purple);letter-spacing:.45em;font-size:13px;margin-bottom:10px}
 h1.song{font-family:"Noto Serif CJK TC",serif;font-size:44px;color:var(--gold);text-align:center;margin:6px 0 6px;letter-spacing:.06em}
 .sub{text-align:center;color:var(--dim);margin-bottom:10px;font-size:15px}
+.coords{text-align:center;color:var(--purple);font-size:15px;letter-spacing:.12em;margin-bottom:6px}
 .scripture{text-align:center;font-family:"Noto Serif CJK TC",serif;border-top:1px solid var(--purple-d);border-bottom:1px solid var(--purple-d);padding:16px 12px;margin:24px 0 8px;font-size:17.5px}
 audio{width:100%;margin:8px 0 4px}
 video{width:100%;background:#000;border:1px solid var(--line)}
@@ -29,7 +31,35 @@ video{width:100%;background:#000;border:1px solid var(--line)}
 .lyr{margin-bottom:22px}
 .lyr h3{color:var(--purple);font-size:14px;letter-spacing:.35em;margin-bottom:5px;font-weight:400}
 .lyr p{font-size:17px}
-.back{display:inline-block;margin-top:34px;color:var(--dim);text-decoration:none;font-size:14.5px}
+.back{display:inline-block;margin-top:34px;color:var(--dim);text-decoration:none;font-size:14.5px;margin-right:26px}
 footer{border-top:2px solid var(--gold);text-align:center;color:var(--dim);padding:22px 20px;font-size:14.5px;line-height:1.9}
 footer .fb{font-family:"Noto Serif CJK TC",serif;color:var(--ink);letter-spacing:.15em}
-@media(max-width:600px){.brand{font-size:21px;letter-spacing:.1em}h1.song{font-size:32px}.index-row .t{font-size:21px}.index-row .m{font-size:12.5px}}
+.now{border:1px solid var(--purple-d);padding:30px 22px 26px;text-align:center;margin-bottom:14px}
+.now .lab{color:var(--purple);letter-spacing:.45em;font-size:12.5px}
+.now .season{font-family:"Noto Serif CJK TC",serif;font-size:36px;color:var(--gold);letter-spacing:.14em;margin:8px 0 2px}
+.now .cd{color:var(--dim);font-size:15px}
+.now .songlink{display:inline-block;margin-top:18px;text-decoration:none}
+.now .songlink .sl{color:var(--purple);font-size:13px;letter-spacing:.3em;display:block}
+.now .songlink .st{font-family:"Noto Serif CJK TC",serif;font-size:26px;color:var(--ink)}
+.now .songlink:hover .st{color:var(--gold)}
+.wheel-row{display:block;padding:18px 14px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.wheel-row .no{font-family:"Noto Serif CJK TC",serif;color:var(--purple);font-size:14px;letter-spacing:.2em;margin-right:14px}
+.wheel-row .t{font-family:"Noto Serif CJK TC",serif;font-size:23px}
+.wheel-row .t .en{font-size:13px;color:var(--dim);letter-spacing:.18em;margin-left:10px;font-family:"Noto Sans CJK TC",sans-serif}
+.wheel-row .nt{display:block;color:var(--dim);font-size:14.5px;margin-top:4px}
+.wheel-row:hover .t{color:var(--gold)}
+.wheel-row.cur{border-left:3px solid var(--gold);background:#100d06}
+.tag{display:inline-block;color:#0a0a0a;background:var(--gold);font-size:12px;padding:1px 9px;letter-spacing:.25em;margin-left:12px;vertical-align:middle;font-family:"Noto Sans CJK TC",sans-serif}
+.peak{display:flex;gap:16px;padding:14px 4px;border-bottom:1px solid var(--line)}
+.peak .pk{color:var(--purple);font-size:13.5px;letter-spacing:.3em;white-space:nowrap;padding-top:4px}
+.peak .pt{font-family:"Noto Serif CJK TC",serif;font-size:19px}
+.peak .pn{color:var(--dim);font-size:14.5px}
+.season-head{text-align:center;margin-bottom:8px}
+.season-head .en{color:var(--purple);letter-spacing:.4em;font-size:12.5px}
+.season-head h1{font-family:"Noto Serif CJK TC",serif;font-size:38px;color:var(--gold);letter-spacing:.14em;margin:6px 0}
+.season-head .nt{color:var(--dim);font-size:15.5px;max-width:640px;margin:0 auto}
+.empty{color:var(--dim);font-size:15px;padding:16px 4px}
+.prevnext{display:flex;justify-content:space-between;margin-top:40px;border-top:1px solid var(--line);padding-top:16px;font-size:14.5px}
+.prevnext a{color:var(--dim);text-decoration:none}
+.prevnext a:hover{color:var(--gold)}
+@media(max-width:600px){.brand{font-size:21px;letter-spacing:.1em}h1.song{font-size:32px}.index-row .t{font-size:21px}.index-row .m{font-size:12.5px}.now .season{font-size:28px}.wheel-row .t{font-size:20px}.season-head h1{font-size:30px}}
