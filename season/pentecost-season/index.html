@@ -8,8 +8,8 @@
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="../../assets/style.css">
 </head><body><header><div class="brand">陳曉東<span class="gold">｜</span>聖言音匠工作室<small>MUSIC.WORDNSPIRIT.COM</small></div></header><main><div class="season-head"><div class="en">SEASON AFTER PENTECOST</div><h1>聖靈降臨期</h1><p class="nt">又名常年期（Ordinary Time）。Ordinary 不是平凡：它出於拉丁文 ordo——救贖之後，教會按三一真神所立的恩典次序，一週一週數著、儆醒等候基督再來的日子。所以所謂常年期，更合適用「恩序期」來明白。</p></div><h2 class="sec">本季的節奏</h2><div class="peak"><span class="pk">入口</span><div><div class="pt">三一主日</div><div class="pn">聖靈降臨節之後的第一個主日——本季的門：三一真神是這秩序的源頭。</div></div></div><div class="peak"><span class="pk">高峰</span><div><div class="pt">諸聖節</div><div class="pn">十一月一日：與歷代聖徒同列，記念那已經得勝的教會。</div></div></div><div class="peak"><span class="pk">高潮</span><div><div class="pt">基督君王主日</div><div class="pn">本季暨全年的最後一個主日：儆醒等候，迎向再來的君王。</div></div></div>
-<p class="note" style="margin-top:14px">本季的主日以「三一後第 X 主日」計數——一週一週數著走，正是 ordo 的意思。</p><h2 class="sec">本季的歌</h2><h2 class="sec" style="font-size:16px">馬太年</h2><a class="index-row" href="../../think-on-these-things/">
-<span class="t">《思念這些事》<small>馬太年 · 聖靈降臨期 · Proper 23 · 三一後第二十主日 · 主日 2026/10/11</small></span>
+<p class="note" style="margin-top:14px">本季的主日以「三一主日後第 X 主日」計數——一週一週數著走，正是 ordo 的意思。</p><h2 class="sec">本季的歌</h2><h2 class="sec" style="font-size:16px">馬太年</h2><a class="index-row" href="../../think-on-these-things/">
+<span class="t">《思念這些事》<small>馬太年 · 聖靈降臨期 · Proper 23 · 三一主日後第二十主日 · 主日 2026/10/11</small></span>
 <span class="m">腓立比書 4:8-9<br>詩歌 · 5:03</span>
 </a><a class="back" href="../../">← 回首頁</a></main><footer><div class="fb">陳曉東｜聖言音匠工作室</div>聖言靈禱 <a href="https://devotions.wordnspirit.com" target="_blank" rel="noopener">devotions.wordnspirit.com ↗</a></footer>
 <script>
@@ -42,7 +42,7 @@ function calInfo(input){
   function wk(from){return Math.round((sun-from)/86400000/7)+1;}
   if(key==="pentecost-season"){var advN=_advent1(S+1);
     if(sun>=advN){extra="基督君王主日";sun=_add(advN,-7);}
-    else if(sun>=tri){var n=wk(tri);extra=n===1?"三一主日":("三一後第"+_cnum(n)+"主日");}}
+    else if(sun>=tri){var n=wk(tri);extra=n===1?"三一主日":("三一主日後第"+_cnum(n)+"主日");}}
   else if(key==="advent"){extra="將臨期第"+_cnum(wk(_advent1(S)))+"主日";}
   else if(key==="lent"){var fs=_add(ash,4);if(sun>=fs){var n2=wk(fs);if(n2>=1&&n2<=5)extra="四旬期第"+_cnum(n2)+"主日";}}
   else if(key==="easter"){extra="復活期第"+_cnum(wk(eas))+"主日";}

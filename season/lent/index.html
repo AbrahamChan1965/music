@@ -38,7 +38,7 @@ function calInfo(input){
   function wk(from){return Math.round((sun-from)/86400000/7)+1;}
   if(key==="pentecost-season"){var advN=_advent1(S+1);
     if(sun>=advN){extra="基督君王主日";sun=_add(advN,-7);}
-    else if(sun>=tri){var n=wk(tri);extra=n===1?"三一主日":("三一後第"+_cnum(n)+"主日");}}
+    else if(sun>=tri){var n=wk(tri);extra=n===1?"三一主日":("三一主日後第"+_cnum(n)+"主日");}}
   else if(key==="advent"){extra="將臨期第"+_cnum(wk(_advent1(S)))+"主日";}
   else if(key==="lent"){var fs=_add(ash,4);if(sun>=fs){var n2=wk(fs);if(n2>=1&&n2<=5)extra="四旬期第"+_cnum(n2)+"主日";}}
   else if(key==="easter"){extra="復活期第"+_cnum(wk(eas))+"主日";}

@@ -64,13 +64,11 @@ footer .fb{font-family:"Noto Serif CJK TC",serif;color:var(--ink);letter-spacing
 .wheel path{stroke:#0a0a0a;stroke-width:1.5;transition:filter .15s}
 .wheel a:hover path{filter:brightness(1.45)}
 .wheel a.cur path{stroke:var(--gold);stroke-width:3.5}
-.wlab{font-family:"Noto Serif CJK TC",serif;font-size:16.5px;fill:var(--ink);pointer-events:none}
+.wlab{font-family:"Noto Serif CJK TC",serif;font-size:17.5px;fill:var(--ink);pointer-events:none}
 .wlab.dark{fill:#0a0a0a;font-weight:700}
 .wcore{fill:#0a0a0a;stroke:var(--purple-d);stroke-width:1}
-.wtitle{font-family:"Noto Serif CJK TC",serif;font-size:27px;fill:var(--gold);letter-spacing:.22em}
-.wen{font-size:9.5px;fill:var(--dim);letter-spacing:.42em}
-.wnow{font-size:14.5px;fill:var(--purple);letter-spacing:.18em}
+.wring{fill:none;stroke:var(--gold);stroke-width:2}
 .wheel-hint{text-align:center;color:var(--dim);font-size:14px;margin-top:6px}
 .prevnext a{color:var(--dim);text-decoration:none}
 .prevnext a:hover{color:var(--gold)}
-@media(max-width:600px){.brand{font-size:21px;letter-spacing:.1em}h1.song{font-size:32px}.index-row .t{font-size:21px}.index-row .m{font-size:12.5px}.now .season{font-size:28px}.wheel-row .t{font-size:20px}.season-head h1{font-size:30px}}
+@media(max-width:600px){.brand{font-size:21px;letter-spacing:.1em}h1.song{font-size:32px}.index-row .t{font-size:21px}.index-row .m{font-size:12.5px}.now .season{font-size:28px}.wheel-row .t{font-size:20px}.season-head h1{font-size:30px}main{padding:26px 12px 48px}}
