@@ -16,7 +16,7 @@
 
 <h2 class="sec">聽歌</h2>
 <audio controls preload="metadata" src="../media/think-on-these-things/audio.mp3"></audio>
-<p class="hint">MP3 約 6.6MB，點播放即邊下載邊播；網絡慢時稍等幾秒。</p>
+<p class="hint">MP3 約 6.8MB，點播放即邊下載邊播；網絡慢時稍等幾秒。</p>
 
 <h2 class="sec">看 MV</h2>
 <video id="mv" controls preload="none" playsinline>
@@ -25,7 +25,15 @@
 <div class="qbar">畫質：
 <button id="q720" class="on" onclick="setq(720)">720p 高清</button>
 <button id="q480" onclick="setq(480)">480p 省流量</button>
-<span class="hint">網絡慢請選 480p（約 35MB）；720p 約 80MB。</span></div>
+<span class="hint">網絡慢請選 480p（約 36MB）；720p 約 84MB。</span></div>
+<script>
+var v=document.getElementById('mv');
+function setq(q){var t=v.currentTime,p=!v.paused;
+v.src='https://media.wordnspirit.com/think-on-these-things/video-'+q+'p.mp4';v.load();
+document.getElementById('q720').className=q==720?'on':'';
+document.getElementById('q480').className=q==480?'on':'';
+v.addEventListener('loadedmetadata',function h(){v.currentTime=t;if(p)v.play();v.removeEventListener('loadedmetadata',h);});}
+</script>
 
 <h2 class="sec">歌詞</h2>
 <section class="lyr"><h3>主歌</h3><p>弟兄們，我還有未盡的話<br>
@@ -98,15 +106,7 @@
 作曲：陳曉東<br>
 編曲：Suno 數智音樂<br>
 製作：Abe the Shepherd Studio（聖言音匠工作室）</p>
-
+<div class="prevnext"><span></span><a href="../o-israel/">下一週《以色列啊》 →</a></div>
 <a class="back" href="../season/pentecost-season/">← 回聖靈降臨期</a>
 <a class="back" href="../">← 回首頁</a>
-<script>
-var v=document.getElementById('mv');
-function setq(q){var t=v.currentTime,p=!v.paused;
-v.src='https://media.wordnspirit.com/think-on-these-things/video-'+q+'p.mp4';v.load();
-document.getElementById('q720').className=q==720?'on':'';
-document.getElementById('q480').className=q==480?'on':'';
-v.addEventListener('loadedmetadata',function h(){v.currentTime=t;if(p)v.play();v.removeEventListener('loadedmetadata',h);});}
-</script>
 </main><footer><div class="fb">陳曉東｜聖言音匠工作室</div>聖言靈禱 <a href="https://devotions.wordnspirit.com" target="_blank" rel="noopener">devotions.wordnspirit.com ↗</a></footer></body></html>
