@@ -59,7 +59,8 @@ window.__cal=function(iso){var p=iso.split("-");return calInfo(_D(+p[0],+p[1],+p
   if(ns)ns.textContent=info.season;
   if(nc)nc.textContent=info.coords;
   var rows=document.querySelectorAll("[data-season]");
-  for(var i=0;i<rows.length;i++){if(rows[i].getAttribute("data-season")===info.key){rows[i].classList.add("cur");var tg=document.createElement("span");tg.className="tag";tg.textContent="本季";rows[i].querySelector(".t").appendChild(tg);}}
+  for(var i=0;i<rows.length;i++){if(rows[i].getAttribute("data-season")===info.key){rows[i].classList.add("cur");var tt=rows[i].querySelector(".t");if(tt){var tg=document.createElement("span");tg.className="tag";tg.textContent="本季";tt.appendChild(tg);}}}
+  var wn=document.getElementById("wheel-now");if(wn)wn.textContent="本季 · "+info.season;
   var yrows=document.querySelectorAll("[data-year]");
   for(var j=0;j<yrows.length;j++){if(yrows[j].getAttribute("data-year")===info.cycle){yrows[j].classList.add("cur");var tg2=document.createElement("span");tg2.className="tag";tg2.textContent="本年";yrows[j].querySelector(".t").appendChild(tg2);}}
   var box=document.getElementById("now-song");
