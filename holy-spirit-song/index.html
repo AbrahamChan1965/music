@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《聖靈之歌》｜聖言音匠工作室</title>
+<meta name="description" content="《聖靈之歌》——約翰福音 14:15–21。馬太年 · 復活期 · Easter 6 · 主日 2026/05/10。點開就能聽的詩歌。">
+<meta property="og:title" content="《聖靈之歌》｜聖言音匠工作室">
+<meta property="og:description" content="《聖靈之歌》——約翰福音 14:15–21。馬太年 · 復活期 · Easter 6 · 主日 2026/05/10。點開就能聽的詩歌。">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/style.css">
+</head><body><header><div class="brand">陳曉東<span class="gold">｜</span>聖言音匠工作室<small>MUSIC.WORDNSPIRIT.COM</small></div></header><main>
+<p class="kicker">聖言音匠工作室 · 詩歌</p>
+<h1 class="song">《聖靈之歌》</h1>
+<p class="coords">馬太年 · 復活期 · Easter 6 · 主日 2026/05/10</p>
+<p class="sub">經文：約翰福音 14:15–21 · 時長 4:41</p>
+<div class="scripture">「我要求父，父就另外賜給你們一位保惠師，叫他永遠與你們同在。」——約翰福音 14:16</div>
+
+<h2 class="sec">聽歌</h2>
+<audio controls preload="metadata" src="../media/holy-spirit-song/audio.mp3"></audio>
+<p class="hint">MP3 約 6.4MB，點播放即邊下載邊播；網絡慢時稍等幾秒。</p>
+
+<h2 class="sec">看 MV</h2>
+<video id="mv" controls preload="none" playsinline>
+<source src="https://media.wordnspirit.com/holy-spirit-song/video-720p.mp4" type="video/mp4">
+</video>
+<div class="qbar">畫質：
+<button id="q720" class="on" onclick="setq(720)">720p 高清</button>
+<button id="q480" onclick="setq(480)">480p 省流量</button>
+<span class="hint">網絡慢請選 480p（約 10MB）；720p 約 18MB。</span></div>
+<script>
+var v=document.getElementById('mv');
+function setq(q){var t=v.currentTime,p=!v.paused;
+v.src='https://media.wordnspirit.com/holy-spirit-song/video-'+q+'p.mp4';v.load();
+document.getElementById('q720').className=q==720?'on':'';
+document.getElementById('q480').className=q==480?'on':'';
+v.addEventListener('loadedmetadata',function h(){v.currentTime=t;if(p)v.play();v.removeEventListener('loadedmetadata',h);});}
+</script>
+
+<h2 class="sec">製作</h2>
+<p class="note">經文出處：約翰福音 14:15–21<br>
+作詞：陳曉東<br>
+作曲：陳曉東<br>
+編曲：Suno 數智音樂<br>
+製作：Abe the Shepherd Studio（聖言音匠工作室）</p>
+<div class="prevnext"><a href="../established-before-you/">← 上一週《在祢面前被建立》</a><a href="../unknown-god/">下一週《未識之神》 →</a></div>
+<a class="back" href="../season/easter/">← 回復活期</a>
+<a class="back" href="../">← 回首頁</a>
+</main><footer><div class="fb">陳曉東｜聖言音匠工作室</div>聖言靈禱 <a href="https://devotions.wordnspirit.com" target="_blank" rel="noopener">devotions.wordnspirit.com ↗</a></footer></body></html>
