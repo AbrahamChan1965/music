@@ -24,7 +24,6 @@ h1.song{font-family:"Noto Serif CJK TC",serif;font-size:44px;color:var(--gold);t
 .scripture{text-align:center;font-family:"Noto Serif CJK TC",serif;border-top:1px solid var(--purple-d);border-bottom:1px solid var(--purple-d);padding:16px 12px;margin:24px 0 8px;font-size:17.5px}
 audio{width:100%;margin:8px 0 4px}
 video{width:100%;background:#000;border:1px solid var(--line)}
-iframe.yt{width:100%;aspect-ratio:16/9;background:#000;border:1px solid var(--line)}
 .qbar{margin:12px 0 4px;font-size:14px;color:var(--dim)}
 .qbar button{background:transparent;color:var(--ink);border:1px solid var(--purple-d);padding:6px 16px;margin-right:8px;cursor:pointer;font-size:14px;font-family:inherit}
 .qbar button.on{border-color:var(--gold);color:var(--gold)}

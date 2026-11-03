@@ -19,8 +19,21 @@
 <p class="hint">MP3 約 7.1MB，點播放即邊下載邊播；網絡慢時稍等幾秒。</p>
 
 <h2 class="sec">看 MV</h2>
-<iframe class="yt" src="https://www.youtube.com/embed/FmBjPGrQfSo" title="《慈愛永遠長存》MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p class="hint">在 YouTube 上看：<a href="https://www.youtube.com/watch?v=FmBjPGrQfSo" target="_blank" rel="noopener">《慈愛永遠長存》｜聖言音匠工作室 ↗</a></p>
+<video id="mv" controls preload="none" playsinline>
+<source src="https://media.wordnspirit.com/everlasting-love/video-720p.mp4" type="video/mp4">
+</video>
+<div class="qbar">畫質：
+<button id="q720" class="on" onclick="setq(720)">720p 高清</button>
+<button id="q480" onclick="setq(480)">480p 省流量</button>
+<span class="hint">網絡慢請選 480p（約 23MB）；720p 約 47MB。</span></div>
+<script>
+var v=document.getElementById('mv');
+function setq(q){var t=v.currentTime,p=!v.paused;
+v.src='https://media.wordnspirit.com/everlasting-love/video-'+q+'p.mp4';v.load();
+document.getElementById('q720').className=q==720?'on':'';
+document.getElementById('q480').className=q==480?'on':'';
+v.addEventListener('loadedmetadata',function h(){v.currentTime=t;if(p)v.play();v.removeEventListener('loadedmetadata',h);});}
+</script>
 
 <h2 class="sec">歌詞</h2>
 <section class="lyr"><h3>主歌一</h3><p>你們要稱謝耶和華<br>
