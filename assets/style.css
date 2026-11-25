@@ -44,6 +44,9 @@ footer .fb{font-family:"Noto Serif CJK TC",serif;color:var(--ink);letter-spacing
 .hrow .hn{display:block;font-family:"Noto Serif CJK TC",serif;font-size:21px;font-weight:700;line-height:1.35}
 .hrow .hs{display:block;color:var(--dim);font-size:13.5px;line-height:1.5}
 .hrow .hd{color:var(--dim);font-size:14px;white-space:nowrap;flex:none}
+.hrow .hmv{color:var(--gold);font-size:13px;white-space:nowrap;flex:none;text-decoration:none}
+.hrow .hmv:hover{text-decoration:underline}
+.hrow:focus-visible{outline:1px solid var(--gold);outline-offset:-1px}
 .hrow .ps{color:var(--gold);font-size:12.5px;letter-spacing:.15em;white-space:nowrap;flex:none;min-width:52px;text-align:right}
 .hrow:hover .hn{color:var(--gold)}
 .hrow.playing .hn{color:var(--gold)}
