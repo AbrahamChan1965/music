@@ -32,6 +32,8 @@ video{width:100%;background:#000;border:1px solid var(--line)}
 .lyr h3{color:var(--purple);font-size:14px;letter-spacing:.35em;margin-bottom:5px;font-weight:400}
 .lyr p{font-size:17px}
 .back{display:inline-block;margin-top:34px;color:var(--dim);text-decoration:none;font-size:14.5px;margin-right:26px}
+.back.top{margin-top:16px}
+.brandlink{display:block;text-decoration:none;color:inherit}
 footer{border-top:2px solid var(--gold);text-align:center;color:var(--dim);padding:22px 20px;font-size:14.5px;line-height:1.9}
 footer .fb{font-family:"Noto Serif CJK TC",serif;color:var(--ink);letter-spacing:.15em}
 .hero{border:1px solid var(--purple-d);padding:30px 22px 22px;margin-bottom:14px}
